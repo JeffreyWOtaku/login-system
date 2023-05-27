@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="styles/styles-profile.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/d3js/7.8.2/d3.min.js"></script>  -->
+</head>
+<body>
+
+    <h2 class="header">Create a Profile</h2>
+   
+    <div id="signup">
+    <form action="/signup" method="post" >
+       <div class="row mb-3"> 
+        <label for="name" class="col-sm-2 col-form-label">Full Name</label><br>
+        <div class="col-sm-4">
+         <input type="text" name = "fullName" class="fullName" id="fullName" ><br>
+    </div>
+       </div>
+       <div class="row mb-3">
+        <label for="work" class="col-sm-2 col-form-label">Place you Currently work </label><br>
+        <div class="col-sm-4">
+        <input type="text" name = "workplace" class="workplace" id="workplace"><br>
+    </div>
+    </div>
+    <div class="row mb-3">
+        <label for="age" class="col-sm-2 col-form-label">Age</label><br>
+        <div class="col-sm-4">
+         <input type="number" name = "age" class="age" id="age" ><br>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="contact" class="col-sm-2 col-form-label">Contcact Info</label><br>
+    <div class="col-sm-4">
+         <input type="number" name = "contact" class="contact" id="contact"><br>
+    </div>
+    </div class="row mb-3">
+        <label for="submit"> </label>
+        <div>
+        <button type = "submit" class="btn-btn-dark" id="submit" onclick="addData()">Submit</button>
+        </div>
+
+        <div> 
+            <p class="form-message"></p>
+        </div>
+        
+    </form>
+</div>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="index.js"></script> -->
+</body>
+</html>
